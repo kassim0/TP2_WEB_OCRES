@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'My Lucida';
     src: url('../font/LucidaGrande.ttf');
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
 }
 
@@ -10,6 +10,8 @@
 }
 
 body {
+    display : flex;
+    flex-direction: column;
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
 }
 
@@ -19,6 +21,9 @@ a {
 }
 
 .wrapper {
+    display :flex;
+    flex-direction :column;
+    align-items: center ;
     padding: 25px 0;
 }
 
@@ -28,12 +33,19 @@ body > header {
     box-shadow: 1px 0px 8px rgb(200, 200, 200);
 }
 
-header .logo-search form  {
+header .logo-search  form  {
     width: 50%;
+}
+.logo-search{
+    /* width: 50%; */
+    /* margin-left : 50px; */
+    /* align-self : center; */
 }
 
 header .user {
     float: right;
+    margin-right: 10px;
+    align-self:flex-end;
 }
 
 header .user a {
@@ -74,6 +86,7 @@ nav ul li {
 }
 
 main header aside img {
+    display :flex;
     border: 1px solid #dadada;
     border-radius: 50%;
     box-shadow: 0 0 5px #cecece;
@@ -136,15 +149,18 @@ input.search {
     background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
     box-shadow: none;
     height: 28px;
-    width: 100%;
     font-size: 13px;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
     margin: 0;
     border-radius: 15px;
     top: 11px;
-    box-shadow: inset 1px 1px 5px #d5d5d5;
+    box-shadow: inset 1px 1px 5px #d5d5d5; 
+    
 }
+
+
+
 
 input.submit {
     display: none;
@@ -208,6 +224,8 @@ nav.browse a, nav.music a {
     padding-left: 20px;
     padding-top: 2px;
 }
+
+
 
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0px; }
 nav a.recent { background: url("../img/icon/recent.png") no-repeat 0px; }
