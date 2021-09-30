@@ -86,11 +86,20 @@ nav ul li {
 }
 
 main header aside img {
-    display :flex;
     border: 1px solid #dadada;
     border-radius: 50%;
     box-shadow: 0 0 5px #cecece;
 }
+.menu{
+    display:flex;
+     flex-direction : column;
+     align-self:flex-start;
+ }
+
+ .principale{
+    display:flex;
+    flex-direction : row;
+ }
 
 nav ul li:last-child {
     margin-bottom: 30px;
@@ -114,12 +123,23 @@ h1 {
 
 
 .stats-links {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
     color: #4b5c66;
     font-size: 12px;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
 }
+/* .stats{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+.links{
+    justify-self: flex-end;
+} */
 
 .stats-links span, .stats-links a {
     margin-right: 20px;
@@ -136,6 +156,9 @@ h1 {
 }
 
 h2 {
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
     font-size: 20px;
     font-weight: normal;
     color: #4b5c66;
@@ -166,6 +189,12 @@ input.submit {
     display: none;
 }
 
+ titre{
+    display :flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .station {
     font-size: 12px;
     color: #008fd5;
@@ -184,6 +213,9 @@ input.submit {
     background-image: url("../img/icon/station-white.png");
 }
 
+#albums{
+    display :flex;
+}
 
 #albums article {
     font-size: 13px;
