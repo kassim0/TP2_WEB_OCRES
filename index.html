@@ -6,45 +6,68 @@
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
 	</head>
+
+
+
+
+
+
+
+
+
+
 	<body>
 		<header>
+								<!--BARRE DE RECHERCHE -->
 			<div class="wrapper">
 				<div class="logo-search">
 					<img class="pull-left" src="img/logo.png" />
 				</div>
 
-				<div>
-					<form method="POST" action="index.html">
-							<input type="search" required class="search">
-							<input type="submit" name="submit" value="Rechercher" class="submit">
-				</div>
-					</form>
+				<form method="POST" action="index.html">
+					<input type="search" required class="search">
+					<input type="submit" name="submit" value="Rechercher" class="submit">
+				</form>
 				<div class="user">
 				    <a href="#">Luke Chesser</a>
 				</div>
 			</div>
 		</header>
-		<div class="principale">
-			<aside class="menu">
-					<h3>Browse</h3>
-					<nav class="browse">
-						<ul class="main">
-							<li><a class="heavy" href="#">Heavy Rotation</a></li>
-							<li><a class="recent" href="#">Recent Activity</a></li>
-							<li><a class="top" href="#">Top Charts</a></li>
-							<li><a class="new" href="#">New Releases</a></li>
-						</ul>
-					</nav>
-					<h3>Your music</h3>
-					<nav class="music">
-						<ul class="main">
-							<li><a class="collection" href="#">Collection</a></li>
-							<li><a class="history" href="#">History</a></li>
-						</ul>
-					</nav>
+
+
+
+
+
+
+
+		<menu>
+			<aside>
+									<!-- MENU DE GAUCHE -->
+				<h3>Browse</h3> 
+				<nav class="browse">
+					<ul class="main">
+						<li><a class="heavy" href="#">Heavy Rotation</a></li>
+						<li><a class="recent" href="#">Recent Activity</a></li>
+						<li><a class="top" href="#">Top Charts</a></li>
+						<li><a class="new" href="#">New Releases</a></li>
+					</ul>
+				</nav>
+				<h3>Your music</h3>
+				<nav class="music">
+					<ul class="main">
+						<li><a class="collection" href="#">Collection</a></li>
+						<li><a class="history" href="#">History</a></li>
+					</ul>
+				</nav>
 			</aside>
 
+
+
+
+
+
 			<main>
+										<!-- MENU CENTRAL -->
 				<header>
 					<div class="name-photo">
 						<aside>
@@ -70,12 +93,10 @@
 						</div>
 					</div>
 				</header>
-				<titre>
-					<h2 >Top Album</h2>
-					<div>
-						<a class="station" href="#">Start Station</a>
-					</div>
-				</titre>
+				<h2>Top Album</h2>
+				<div>
+					<a class="station" href="#">Start Station</a>
+				</div>
 				<section id="albums">
 					<article>
 						<figure>
@@ -159,6 +180,6 @@
 					</article>
 				</section>
 			</main>
-		</div>
+		</menu>
 	</body>
 </html>
