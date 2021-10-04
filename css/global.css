@@ -65,6 +65,9 @@ header .user a {
     color: #89949b;
     padding-top: 5px;
 }
+main{
+margin-right: 10em;
+}
 
 main h2 {
     margin-top: 4px;
@@ -83,18 +86,40 @@ h3 {
     margin-bottom: 10px;
 }
 
+
+
+nav ul li a:hover {
+    color: #fe7f19;
+}
+
+/* .left_menu{
+    background-color: red;
+}
+.browse{
+    background-color:green;
+} */
+
+nav ul li {
+    margin-top: 5px;
+    /* background-color: black; */
+}
+
 nav ul li a { 
     font-size: 14px;
     font-weight: normal;
     color: #828c92;
 }
 
-nav ul li a:hover {
-    color: #fe7f19;
+nav ul li:last-child {
+    margin-bottom: 30px;
 }
 
-nav ul li {
-    margin-top: 5px;
+.left_menu{
+    padding : 0 10em;
+    margin-top: 2em;
+    display :flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 main header aside img {
@@ -103,8 +128,9 @@ main header aside img {
     box-shadow: 0 0 5px #cecece;
 }
 
-nav ul li:last-child {
-    margin-bottom: 30px;
+.name-photo{
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -112,6 +138,11 @@ h1 {
     font-size: 24px;
     font-weight: normal;
     margin: 0 0 8px 0;
+}
+
+.name{
+    margin-top:5px;
+    margin-left: 20px;
 }
 
 .name p { 
@@ -125,12 +156,17 @@ h1 {
 
 
 .stats-links {
+    display :flex;
+    justify-content: space-between;
     color: #4b5c66;
     font-size: 12px;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
 }
+/* .stats{
+    justify-self: flex-start;
+} */
 
 .stats-links span, .stats-links a {
     margin-right: 20px;
@@ -219,6 +255,7 @@ input.submit {
 nav.browse a, nav.music a {
     padding-left: 20px;
     padding-top: 2px;
+    padding-right: 100px;;
 }
 
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0px; }
