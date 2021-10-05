@@ -182,6 +182,12 @@ h1 {
     color: #4b5c66;
 }
 
+.top_album{
+    display : flex; 
+    flex-direction: row;
+    justify-content:space-between;
+}
+
 h2 {
     font-size: 20px;
     font-weight: normal;
@@ -215,6 +221,7 @@ input.submit {
     color: white;
     background-image: url("../img/icon/station-white.png");
 }
+
 
 
 #albums article {
